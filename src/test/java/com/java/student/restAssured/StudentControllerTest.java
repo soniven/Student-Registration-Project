@@ -1,6 +1,5 @@
 package com.java.student.restAssured;
 
-import io.cucumber.spring.CucumberContextConfiguration;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
@@ -9,8 +8,8 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.testng.annotations.*;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -35,7 +34,7 @@ public class StudentControllerTest {
 
     @Test
     public void testGetStudentById() {
-        int Student_id = 1;
+        int Student_id = 223445;
         String getStudentByIdRequest = base_URL + "/" + Student_id;
         RequestSpecification httpRequest = RestAssured.given();
         Response response = httpRequest.request(Method.GET);

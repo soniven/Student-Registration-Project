@@ -3,8 +3,6 @@ package com.java.student.domain;
 import lombok.Data;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Data
@@ -22,24 +20,24 @@ public class StudentEntity {
         return id;
     }
 
-    public void setFirstName(String fname) {
-        this.firstName = fname;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setLastName(String lName) {
-        this.lastName = lName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setClassName(String cName) {
-        this.className = cName;
+    public void setClassName(String className) {
+        this.className = className;
     }
 
     public String getClassName() {

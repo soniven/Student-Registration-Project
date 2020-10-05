@@ -34,11 +34,11 @@ public class Steps extends  StudentControllerTest {
     @Given("student fills up registration form")
     public void student_registration_website() throws Throwable{
         payload = "{\n" +
-                "    \"id\": 2,\n" +
-                "    \"firstName\": \"Test4646\",\n" +
-                "    \"lastName\": \"Sa1263463\",\n" +
-                "    \"className\": \"3 B\",\n" +
-                "    \"nationality\":\"India\"\n" +
+                "    \"id\": 223445,\n" +
+                "    \"firstName\": \"Mike\",\n" +
+                "    \"lastName\": \"Wong\",\n" +
+                "    \"className\": \"3 A\",\n" +
+                "    \"nationality\":\"Singapore\"\n" +
                 "}";
     }
 
@@ -61,7 +61,7 @@ public class Steps extends  StudentControllerTest {
         action = mvc.perform(put(base_URL)
                 .contentType(MediaType.APPLICATION_JSON)
                 .content("{\n" +
-                        "    \"id\": 2,\n" +
+                        "    \"id\": 223445,\n" +
                         "    \"className\": \"3 D\"\n" +
                         "}")
         );
@@ -76,7 +76,7 @@ public class Steps extends  StudentControllerTest {
 
     @When("delete student by id")
     public void delete_student_by_id() throws Throwable {
-        action = mvc.perform(delete(base_URL + "/2"));
+        action = mvc.perform(delete(base_URL + "/223445"));
     }
 
     @Then("student record is deleted successfully")

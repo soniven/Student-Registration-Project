@@ -30,7 +30,7 @@ public class StudentController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Student saveCustomer(@RequestBody Student student){
+    public Student saveStudent(@RequestBody Student student){
         return studentService.saveStudent(student);
     }
 
