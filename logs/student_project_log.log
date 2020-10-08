@@ -1,0 +1,33 @@
+[2020-10-08T14:35:48.048Z] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting Steps on FVFCK10LL414 with PID 26298 (started by s.chavan in /Users/s.chavan/IdeaProjects/student_enrolment)
+[2020-10-08T14:35:48.048Z] [org.springframework.boot.SpringApplication] [main] [651] [INFO ] No active profile set, falling back to default profiles: default
+[2020-10-08T14:35:49.049Z] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [127] [INFO ] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+[2020-10-08T14:35:49.049Z] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [main] [187] [INFO ] Finished Spring Data repository scanning in 40ms. Found 1 JPA repository interfaces.
+[2020-10-08T14:35:49.049Z] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [main] [181] [INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+[2020-10-08T14:35:49.049Z] [com.zaxxer.hikari.HikariDataSource] [main] [110] [INFO ] HikariPool-1 - Starting...
+[2020-10-08T14:35:49.049Z] [com.zaxxer.hikari.HikariDataSource] [main] [123] [INFO ] HikariPool-1 - Start completed.
+[2020-10-08T14:35:50.050Z] [org.hibernate.jpa.internal.util.LogHelper] [task-1] [31] [INFO ] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2020-10-08T14:35:50.050Z] [org.hibernate.Version] [task-1] [44] [INFO ] HHH000412: Hibernate ORM core version 5.4.21.Final
+[2020-10-08T14:35:50.050Z] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] [main] [220] [WARN ] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2020-10-08T14:35:50.050Z] [org.hibernate.annotations.common.reflection.java.JavaReflectionManager] [task-1] [49] [INFO ] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[2020-10-08T14:35:50.050Z] [org.hibernate.dialect.Dialect] [task-1] [170] [INFO ] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2020-10-08T14:35:50.050Z] [org.springframework.mock.web.MockServletContext] [main] [455] [INFO ] Initializing Spring TestDispatcherServlet ''
+[2020-10-08T14:35:50.050Z] [org.springframework.web.servlet.FrameworkServlet] [main] [525] [INFO ] Initializing Servlet ''
+[2020-10-08T14:35:50.050Z] [org.springframework.web.servlet.FrameworkServlet] [main] [547] [INFO ] Completed initialization in 9 ms
+[2020-10-08T14:35:50.050Z] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener] [main] [49] [INFO ] Triggering deferred initialization of Spring Data repositories…
+[2020-10-08T14:35:50.050Z] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] [task-1] [52] [INFO ] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2020-10-08T14:35:50.050Z] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [task-1] [416] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2020-10-08T14:35:50.050Z] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener] [main] [53] [INFO ] Spring Data repositories initialized!
+[2020-10-08T14:35:50.050Z] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started Steps in 3.627 seconds (JVM running for 4.795)
+[2020-10-08T14:35:51.051Z] [com.java.student.controller.StudentController] [main] [40] [INFO ] creating student Mike Wong in the class 3 A
+[2020-10-08T14:35:51.051Z] [com.java.student.service.StudentServiceImpl] [main] [45] [INFO ] student details saved successfully
+[2020-10-08T14:35:51.051Z] [com.java.student.controller.StudentController] [main] [46] [INFO ] updating student class name to 3 D
+[2020-10-08T14:35:51.051Z] [com.java.student.service.StudentServiceImpl] [main] [59] [INFO ] student details updated successfully
+[2020-10-08T14:35:51.051Z] [com.java.student.controller.StudentController] [main] [52] [INFO ] deleting student by id 223445
+[2020-10-08T14:35:51.051Z] [com.java.student.service.StudentServiceImpl] [main] [53] [INFO ] student id 223445 deleted successfully
+[2020-10-08T14:35:51.051Z] [com.java.student.controller.StudentController] [main] [27] [INFO ] fetching all students
+[2020-10-08T14:35:51.051Z] [com.java.student.service.StudentServiceImpl] [main] [34] [INFO ] students records retrieved successfully
+[2020-10-08T14:35:51.051Z] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [SpringContextShutdownHook] [598] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2020-10-08T14:35:51.051Z] [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] [SpringContextShutdownHook] [526] [INFO ] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[2020-10-08T14:35:51.051Z] [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [SpringContextShutdownHook] [218] [INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-10-08T14:35:51.051Z] [com.zaxxer.hikari.HikariDataSource] [SpringContextShutdownHook] [350] [INFO ] HikariPool-1 - Shutdown initiated...
+[2020-10-08T14:35:51.051Z] [com.zaxxer.hikari.HikariDataSource] [SpringContextShutdownHook] [352] [INFO ] HikariPool-1 - Shutdown completed.
