@@ -1,6 +1,5 @@
 package com.java.student.controller;
 
-import com.java.student.StudentApplication;
 import com.java.student.dto.Student;
 import com.java.student.service.StudentService;
 import org.slf4j.Logger;

@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Data
-@Entity
+@Entity (name="student")
 public class StudentEntity {
 
     @Id
@@ -19,6 +19,8 @@ public class StudentEntity {
     public Long getId() {
         return id;
     }
+
+    public void setId(Long id) { this.id = id; }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -51,6 +53,4 @@ public class StudentEntity {
     public String getNationality() {
         return nationality;
     }
-
-    public void setId(Long id) { this.id = id; }
 }
