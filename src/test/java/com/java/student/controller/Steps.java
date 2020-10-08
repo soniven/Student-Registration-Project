@@ -5,17 +5,15 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.spring.CucumberContextConfiguration;
-import io.restassured.response.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.ResultActions;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
-import org.springframework.test.web.servlet.ResultActions;
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -23,7 +21,6 @@ import org.springframework.test.web.servlet.ResultActions;
 public class Steps extends  StudentControllerTest {
 
     String base_URL = "http://localhost:8080/api/v1/students";
-    private static Response response;
 
     @Autowired
     private MockMvc mvc;
@@ -32,7 +29,7 @@ public class Steps extends  StudentControllerTest {
     String payload;
 
     @Given("student fills up registration form")
-    public void student_registration_website() throws Throwable{
+    public void student_registration_website() {
         payload = "{\n" +
                 "    \"id\": 223445,\n" +
                 "    \"firstName\": \"Mike\",\n" +
