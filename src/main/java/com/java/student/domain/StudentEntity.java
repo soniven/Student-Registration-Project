@@ -16,41 +16,23 @@ public class StudentEntity {
     String className;
     String nationality;
 
-    public Long getId() {
-        return id;
-    }
+    public Long getId() { return id; }
 
     public void setId(Long id) { this.id = id; }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+    public String getFirstName() { return firstName; }
 
-    public String getFirstName() {
-        return firstName;
-    }
+    public void setFirstName(String firstName) { this.firstName = firstName; }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+    public String getLastName() { return lastName;}
 
-    public String getLastName() {
-        return lastName;
-    }
+    public void setLastName(String lastName) { this.lastName = lastName; }
 
-    public void setClassName(String className) {
-        this.className = className;
-    }
+    public String getClassName() { return className; }
 
-    public String getClassName() {
-        return className;
-    }
+    public void setClassName(String className) { this.className = className; }
 
-    public void setNationality(String nationality) {
-        this.nationality = nationality;
-    }
+    public String getNationality() { return nationality; }
 
-    public String getNationality() {
-        return nationality;
-    }
+    public void setNationality(String nationality) { this.nationality = nationality; }
 }

@@ -5,7 +5,7 @@ import com.java.student.dto.Student;
 
 public class JpaUtils {
 
-    public static Student createStudentFromEntity(StudentEntity studentEntity) {
+    public static Student createStudentFromStudentEntity(StudentEntity studentEntity) {
         Student student = new Student();
         student.setId(studentEntity.getId());
         student.setFirstName(studentEntity.getFirstName());
